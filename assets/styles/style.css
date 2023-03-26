@@ -1,0 +1,57 @@
+/*Main colors*/
+/*Font families*/
+/*Screen sizes*/
+/*Mixins*/
+/*Class for h1 and h2*/
+.title {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+.title_white {
+  color: #FFFFFF;
+}
+.title_center {
+  text-align: center;
+}
+
+/*Class for button*/
+.btn {
+  border: 2px solid #0A2640;
+  border-radius: 56px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #0A2640;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn_blue {
+  background: #0A2640;
+  color: #FFFFFF;
+}
+.btn_green {
+  background: #65E4A3;
+  border-color: #69E6A6;
+}
+.btn_white-border {
+  border-color: #FFFFFF;
+}
+
+/*Class for section1 (Lera)*/
+/*Class for section2 (Anna)*/
+/*Class for section3 (Katya G.)*/
+/*Class for section4 (Katya P.)*/
+/*Class for section5 (Nataly)*/
+/*Class for section6 (Dinara)*/
+
+/*# sourceMappingURL=style.css.map */
