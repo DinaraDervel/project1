@@ -31,6 +31,7 @@
 .btn {
   border: 2px solid #0A2640;
   border-radius: 56px;
+  padding: 16px 56px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -40,6 +41,11 @@
 }
 .btn:hover {
   cursor: pointer;
+}
+.btn_small {
+  padding: 8px 40px;
+  font-size: 16px;
+  line-height: 24px;
 }
 .btn_blue {
   background: #0A2640;
@@ -64,9 +70,9 @@
   margin: 0 auto;
 }
 .footer_container {
+  height: 391px;
   background-color: #0A2640;
   border-radius: 12px;
-  padding: 72px auto;
 }
 .footer_subscribe {
   width: 55%;
@@ -87,6 +93,7 @@
   background: #FFFFFF;
   border: 2px solid #FFFFFF;
   border-radius: 240px;
+  padding-left: 32px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;

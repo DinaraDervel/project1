@@ -57,6 +57,7 @@ $tablet: 1023px;
 .btn {
     border: 2px solid $blue;
     border-radius: 56px;
+    padding: 16px 56px;
 
     font-family: $open-sans;
     font-style: normal;
@@ -69,6 +70,12 @@ $tablet: 1023px;
         cursor: pointer;
     }
 
+    &_small {
+        padding: 8px 40px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
     &_blue {
         background: $blue;
         color: $white;
@@ -99,9 +106,9 @@ $tablet: 1023px;
     @include container;
 
     &_container {
+        height: 391px;
         background-color: $blue;
         border-radius: 12px;
-        padding: 72px auto;
     }
 
     &_subscribe {
@@ -124,6 +131,7 @@ $tablet: 1023px;
         background: $white;
         border: 2px solid $white;
         border-radius: 240px;
+        padding-left: 32px;
 
         font-family: $open-sans;
         font-style: normal;
