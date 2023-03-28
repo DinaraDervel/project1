@@ -25,9 +25,13 @@ $tablet: 1023px;
     margin: 0;
     padding: 0;
 }
-
+/*Box-sizing*/
+* {
+    box-sizing: border-box;
+  }
 /*Class for h1 and h2*/
 .title {
+    margin: 0;
     font-family: $manrope;
     font-style: normal;
     font-weight: 400;
@@ -91,3 +95,40 @@ $tablet: 1023px;
 /*Class for section5 (Nataly)*/
 
 /*Class for section6 (Dinara)*/
+.footer {
+    @include container;
+
+    &_container {
+        background-color: $blue;
+        border-radius: 12px;
+        padding: 72px auto;
+    }
+
+    &_subscribe {
+        width: 55%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    &_form {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        gap: 24px;
+    }
+    &_input {
+        flex-grow: 1;
+        background: $white;
+        border: 2px solid $white;
+        border-radius: 240px;
+
+        font-family: $open-sans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+    }
+}
