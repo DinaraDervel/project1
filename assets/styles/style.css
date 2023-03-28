@@ -2,8 +2,14 @@
 /*Font families*/
 /*Screen sizes*/
 /*Mixins*/
+/*Box-sizing*/
+* {
+  box-sizing: border-box;
+}
+
 /*Class for h1 and h2*/
 .title {
+  margin: 0;
   font-family: "Manrope", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -53,5 +59,39 @@
 /*Class for section4 (Katya P.)*/
 /*Class for section5 (Nataly)*/
 /*Class for section6 (Dinara)*/
+.footer {
+  width: 85%;
+  margin: 0 auto;
+}
+.footer_container {
+  background-color: #0A2640;
+  border-radius: 12px;
+  padding: 72px auto;
+}
+.footer_subscribe {
+  width: 55%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.footer_form {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  gap: 24px;
+}
+.footer_input {
+  flex-grow: 1;
+  background: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 240px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+}
 
 /*# sourceMappingURL=style.css.map */
