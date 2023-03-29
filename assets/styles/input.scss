@@ -99,6 +99,15 @@ $tablet: 1023px;
 
 /*Class for section4 (Katya P.)*/
 
+.block4 {
+    @include container;
+
+    &_container {
+        height: 797px;
+        background-color: $blue
+    }
+}
+
 /*Class for section5 (Nataly)*/
 
 /*Class for section6 (Dinara)*/
