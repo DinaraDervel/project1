@@ -4,6 +4,7 @@ $green: #65E4A3;
 $green-border: #69E6A6;
 $white: #FFFFFF;
 $black: #000000;
+$gray: #777777;
 
 /*Font families*/
 $manrope: 'Manrope', sans-serif;
@@ -75,7 +76,7 @@ $tablet: 1023px;
         font-size: 16px;
         line-height: 24px;
     }
-    
+
     &_blue {
         background: $blue;
         color: $white;
@@ -114,13 +115,22 @@ $tablet: 1023px;
 .footer {
     @include container;
 
-    &_container {
+    &__container {
         height: 391px;
+    }
+
+    &__container_blue {
         background-color: $blue;
         border-radius: 12px;
     }
 
-    &_subscribe {
+    &__container_flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 96px;
+    }
+    &__subscribe {
         width: 55%;
         margin: 0 auto;
         display: flex;
@@ -128,14 +138,15 @@ $tablet: 1023px;
         justify-content: space-around;
     }
 
-    &_form {
+    &__form {
         width: 80%;
         margin: 0 auto;
         display: flex;
         justify-content: space-around;
         gap: 24px;
     }
-    &_input {
+
+    &__input {
         flex-grow: 1;
         background: $white;
         border: 2px solid $white;
@@ -148,4 +159,32 @@ $tablet: 1023px;
         font-size: 20px;
         line-height: 32px;
     }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-family: $open-sans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    &__menu {
+        @include reset-list();
+    }
+
+    &__link {
+        text-decoration: none;
+        font-family: $open-sans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        color: $gray;
+    }
+
 }
