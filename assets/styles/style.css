@@ -21,7 +21,7 @@
   color: #000000;
 }
 .title_white {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .title_center {
   text-align: center;
@@ -29,7 +29,7 @@
 
 /*Class for button*/
 .btn {
-  border: 2px solid #0A2640;
+  border: 2px solid #0a2640;
   border-radius: 56px;
   padding: 16px 56px;
   font-family: "Open Sans", sans-serif;
@@ -37,7 +37,7 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;
-  color: #0A2640;
+  color: #0a2640;
 }
 .btn:hover {
   cursor: pointer;
@@ -48,15 +48,15 @@
   line-height: 24px;
 }
 .btn_blue {
-  background: #0A2640;
-  color: #FFFFFF;
+  background: #0a2640;
+  color: #ffffff;
 }
 .btn_green {
-  background: #65E4A3;
-  border-color: #69E6A6;
+  background: #65e4a3;
+  border-color: #69e6a6;
 }
 .btn_white-border {
-  border-color: #FFFFFF;
+  border-color: #ffffff;
 }
 
 /*Class for section1 (Lera)*/
@@ -73,7 +73,7 @@
   height: 391px;
 }
 .footer__container_blue {
-  background-color: #0A2640;
+  background-color: #0a2640;
   border-radius: 12px;
 }
 .footer__container_flex {
@@ -98,8 +98,8 @@
 }
 .footer__input {
   flex-grow: 1;
-  background: #FFFFFF;
-  border: 2px solid #FFFFFF;
+  background: #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 240px;
   padding-left: 32px;
   font-family: "Open Sans", sans-serif;
