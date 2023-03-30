@@ -104,8 +104,8 @@ $tablet: 1023px;
     background-color: $blue;
   }
   &__title {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
     margin: 70px 70px 0px 70px;
   }
   &__title_white {
@@ -124,24 +124,24 @@ $tablet: 1023px;
 }
 
 .cards {
-    display: flex;
-    margin: 70px 50px 50px 70px;
+  display: flex;
+  margin: 70px 50px 50px 70px;
 }
 
 .card {
-    width: 350px;
-    background-color: $white;
-    border-radius: 10px;
-    margin: auto;
-    &__text {
-        width: 270px
-    }
+  width: 350px;
+  background-color: $white;
+  border-radius: 10px;
+  margin: auto;
+  &__text {
+    width: 270px;
+  }
 }
 
 .photo {
-    width: 1100px;
-    height: 403px;
-    border-radius: 24px
+  width: 1100px;
+  height: 403px;
+  border-radius: 24px;
 }
 
 /*Class for section5 (Nataly)*/
@@ -163,20 +163,21 @@ $tablet: 1023px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 96px;
   }
   &__subscribe {
     width: 55%;
+    height: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   &__form {
     width: 80%;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     gap: 24px;
   }
@@ -209,7 +210,7 @@ $tablet: 1023px;
   }
 
   &__menu {
-    @include reset-list();
+    @include reset-list;
   }
 
   &__link {
@@ -220,5 +221,11 @@ $tablet: 1023px;
     font-size: 20px;
     line-height: 32px;
     color: $gray;
+  }
+
+  @media (max-width: $tablet) {
+    &__subscribe {
+      width: 100%;
+    }
   }
 }
