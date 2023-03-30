@@ -15,9 +15,6 @@
   font-weight: 400;
   font-size: 48px;
   line-height: 72px;
-  display: flex;
-  align-items: center;
-  text-align: center;
   color: #000000;
 }
 .title_white {
@@ -63,6 +60,33 @@
 /*Class for section2 (Anna)*/
 /*Class for section3 (Katya G.)*/
 /*Class for section4 (Katya P.)*/
+.block4 {
+  width: 85%;
+  margin: 0 auto;
+}
+.block4__container {
+  height: 797px;
+  background-color: #0a2640;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin: 70px;
+}
+.title__title_white {
+  width: 30%;
+  height: 139px;
+}
+.title__button {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  margin: 10px;
+}
+
 /*Class for section5 (Nataly)*/
 /*Class for section6 (Dinara)*/
 .footer {

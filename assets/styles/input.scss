@@ -39,10 +39,6 @@ $tablet: 1023px;
   font-size: 48px;
   line-height: 72px;
 
-  display: flex;
-  align-items: center;
-  text-align: center;
-
   color: $black;
 
   &_white {
@@ -99,6 +95,37 @@ $tablet: 1023px;
 /*Class for section3 (Katya G.)*/
 
 /*Class for section4 (Katya P.)*/
+
+.block4 {
+  @include container;
+
+  &__container {
+    height: 797px;
+    background-color: $blue;
+  }
+
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    margin: 70px;
+    
+  &__title_white {
+    width: 30%;
+    height: 139px;
+  }
+    
+  &__button {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    margin: 10px;
+  }
+
+}
 
 /*Class for section5 (Nataly)*/
 
