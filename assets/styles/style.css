@@ -68,17 +68,16 @@
   height: 1300px;
   background-color: #0a2640;
 }
-
-.title {
+.block4__title {
   display: flex;
   align-items: center;
   margin: 70px 70px 0px 70px;
 }
-.title__title_white {
+.block4__title_white {
   width: 30%;
   height: 139px;
 }
-.title__button {
+.block4__button {
   width: 72px;
   height: 72px;
   border-radius: 50%;

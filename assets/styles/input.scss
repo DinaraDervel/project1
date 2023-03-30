@@ -103,14 +103,11 @@ $tablet: 1023px;
     height: 1300px;
     background-color: $blue;
   }
-
-}
-
-.title {
+  &__title {
   display: flex;
   align-items: center;
     margin: 70px 70px 0px 70px;
-    
+  }
   &__title_white {
     width: 30%;
     height: 139px;
