@@ -1,5 +1,6 @@
 /*Main colors*/
 $blue: #0a2640;
+$light-blue: #1c3d5b;
 $green: #65e4a3;
 $green-border: #69e6a6;
 $white: #ffffff;
@@ -151,9 +152,27 @@ $tablet: 1023px;
   }
 
   &__container_blue {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+
     background-color: $blue;
     border-radius: 12px;
     margin-bottom: 184px;
+  }
+  //Ellipse
+  &__container_blue::before {
+    content: "";
+    position: absolute;
+    left: 38.83%;
+    right: -46.58%;
+    top: -269.57%;
+    bottom: 38.87%;
+    height: 1293px;
+    width: 1293px;
+    border-radius: 646.5px;
+    background-color: $light-blue;
+    z-index: -1;
   }
 
   &__container_flex {
@@ -238,12 +257,3 @@ $tablet: 1023px;
     }
   }
 }
-// .ellipse {
-//   height: 1293px;
-//   width: 1293px;
-//   border-radius: 646.5px;
-
-//   position: absolute;
-
-//   background: #1c3d5b;
-// }
