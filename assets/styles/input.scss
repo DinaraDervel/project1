@@ -21,11 +21,9 @@ $tablet: 1023px;
   margin: 0 auto;
 }
 
-@mixin reset-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+/*Reset*/
+@import "reset";
+
 /*Box-sizing*/
 * {
   box-sizing: border-box;
@@ -96,7 +94,6 @@ $tablet: 1023px;
 /*Class for section4 (Katya P.)*/
 
 .block4 {
-
   &__container {
     height: 1300px;
     background-color: $blue;
@@ -156,6 +153,7 @@ $tablet: 1023px;
   &__container_blue {
     background-color: $blue;
     border-radius: 12px;
+    margin-bottom: 184px;
   }
 
   &__container_flex {
@@ -200,6 +198,18 @@ $tablet: 1023px;
     flex-direction: column;
   }
 
+  &_paragraph {
+    width: 21.4vw;
+
+    font-family: $open-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+
+    color: $gray;
+  }
+
   &__title {
     font-family: $open-sans;
     font-style: normal;
@@ -209,7 +219,7 @@ $tablet: 1023px;
   }
 
   &__menu {
-    @include reset-list;
+    margin-top: 32px;
   }
 
   &__link {
@@ -228,3 +238,12 @@ $tablet: 1023px;
     }
   }
 }
+// .ellipse {
+//   height: 1293px;
+//   width: 1293px;
+//   border-radius: 646.5px;
+
+//   position: absolute;
+
+//   background: #1c3d5b;
+// }
