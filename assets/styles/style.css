@@ -2,6 +2,27 @@
 /*Font families*/
 /*Screen sizes*/
 /*Mixins*/
+/*Reset*/
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
 /*Box-sizing*/
 * {
   box-sizing: border-box;
@@ -9,19 +30,15 @@
 
 /*Class for h1 and h2*/
 .title {
-  margin: 0;
   font-family: "Manrope", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
   line-height: 72px;
-  display: flex;
-  align-items: center;
-  text-align: center;
   color: #000000;
 }
 .title_white {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .title_center {
   text-align: center;
@@ -29,7 +46,7 @@
 
 /*Class for button*/
 .btn {
-  border: 2px solid #0A2640;
+  border: 2px solid #0a2640;
   border-radius: 56px;
   padding: 16px 56px;
   font-family: "Open Sans", sans-serif;
@@ -37,7 +54,7 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;
-  color: #0A2640;
+  color: #0a2640;
 }
 .btn:hover {
   cursor: pointer;
@@ -48,21 +65,64 @@
   line-height: 24px;
 }
 .btn_blue {
-  background: #0A2640;
-  color: #FFFFFF;
+  background: #0a2640;
+  color: #ffffff;
 }
 .btn_green {
-  background: #65E4A3;
-  border-color: #69E6A6;
+  background: #65e4a3;
+  border-color: #69e6a6;
 }
 .btn_white-border {
-  border-color: #FFFFFF;
+  border-color: #ffffff;
 }
 
 /*Class for section1 (Lera)*/
 /*Class for section2 (Anna)*/
 /*Class for section3 (Katya G.)*/
 /*Class for section4 (Katya P.)*/
+.block4__container {
+  height: 1300px;
+  background-color: #0a2640;
+}
+.block4__title {
+  display: flex;
+  align-items: center;
+  margin-left: 130px;
+  margin-right: 80px;
+  width: 870px;
+  height: 139px;
+}
+.block4__button {
+  display: flex;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  margin-right: 30px;
+  margin-left: 20px;
+}
+
+.cards {
+  display: flex;
+  margin: 70px 50px 50px 70px;
+}
+
+.card {
+  width: 350px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.card__text {
+  width: 270px;
+}
+
+.photo {
+  width: 1100px;
+  height: 403px;
+  border-radius: 24px;
+}
+
 /*Class for section5 (Nataly)*/
 /*Class for section6 (Dinara)*/
 .footer {
@@ -73,33 +133,51 @@
   height: 391px;
 }
 .footer__container_blue {
-  background-color: #0A2640;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  background-color: #0a2640;
   border-radius: 12px;
+  margin-bottom: 184px;
+}
+.footer__container_blue::before {
+  content: "";
+  position: absolute;
+  left: 38.83%;
+  right: -46.58%;
+  top: -269.57%;
+  bottom: 38.87%;
+  height: 1293px;
+  width: 1293px;
+  border-radius: 646.5px;
+  background-color: #1c3d5b;
+  z-index: -1;
 }
 .footer__container_flex {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 96px;
 }
 .footer__subscribe {
   width: 55%;
+  height: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .footer__form {
   width: 80%;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   gap: 24px;
 }
 .footer__input {
   flex-grow: 1;
-  background: #FFFFFF;
-  border: 2px solid #FFFFFF;
+  background: #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 240px;
   padding-left: 32px;
   font-family: "Open Sans", sans-serif;
@@ -112,6 +190,15 @@
   display: flex;
   flex-direction: column;
 }
+.footer_paragraph {
+  width: 21.4vw;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #777777;
+}
 .footer__title {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -120,9 +207,7 @@
   line-height: 32px;
 }
 .footer__menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  margin-top: 32px;
 }
 .footer__link {
   text-decoration: none;
@@ -132,6 +217,11 @@
   font-size: 20px;
   line-height: 32px;
   color: #777777;
+}
+@media (max-width: 1023px) {
+  .footer__subscribe {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
