@@ -9,7 +9,6 @@
 
 /*Class for h1 and h2*/
 .title {
-  margin: 0;
   font-family: "Manrope", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -60,10 +59,6 @@
 /*Class for section2 (Anna)*/
 /*Class for section3 (Katya G.)*/
 /*Class for section4 (Katya P.)*/
-.block4 {
-  width: 85%;
-  margin: 0 auto;
-}
 .block4__container {
   height: 1300px;
   background-color: #0a2640;
@@ -71,19 +66,20 @@
 .block4__title {
   display: flex;
   align-items: center;
-  margin: 70px 70px 0px 70px;
-}
-.block4__title_white {
-  width: 30%;
+  margin-left: 130px;
+  margin-right: 80px;
+  width: 870px;
   height: 139px;
 }
 .block4__button {
+  display: flex;
   width: 72px;
   height: 72px;
   border-radius: 50%;
   border: none;
   background-color: transparent;
-  margin: 10px;
+  margin-right: 30px;
+  margin-left: 20px;
 }
 
 .cards {
@@ -95,7 +91,6 @@
   width: 350px;
   background-color: #ffffff;
   border-radius: 10px;
-  margin: auto;
 }
 .card__text {
   width: 270px;
