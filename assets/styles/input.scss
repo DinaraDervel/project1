@@ -34,8 +34,8 @@ $tablet: 1023px;
   font-family: $manrope;
   font-style: normal;
   font-weight: 400;
-  font-size: 48px;
-  line-height: 72px;
+  font-size: 3em;
+  line-height: 1.5em;
 
   color: $black;
 
@@ -178,8 +178,10 @@ $tablet: 1023px;
   &__container_flex {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 96px;
   }
+
   &__subscribe {
     width: 55%;
     height: 100%;
@@ -215,6 +217,9 @@ $tablet: 1023px;
   &__card {
     display: flex;
     flex-direction: column;
+  }
+  &__card:first-of-type {
+    margin-right: 179px;
   }
 
   &_paragraph {

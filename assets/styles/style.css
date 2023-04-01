@@ -33,8 +33,8 @@ ol {
   font-family: "Manrope", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 48px;
-  line-height: 72px;
+  font-size: 3em;
+  line-height: 1.5em;
   color: #000000;
 }
 .title_white {
@@ -156,7 +156,8 @@ ol {
 .footer__container_flex {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 96px;
 }
 .footer__subscribe {
   width: 55%;
@@ -189,6 +190,9 @@ ol {
 .footer__card {
   display: flex;
   flex-direction: column;
+}
+.footer__card:first-of-type {
+  margin-right: 179px;
 }
 .footer_paragraph {
   width: 21.4vw;
