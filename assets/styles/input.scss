@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*Main colors*/
 $blue: #0a2640;
 $light-blue: #1c3d5b;
@@ -319,3 +320,415 @@ $tablet: 1023px;
     }
   }
 }
+=======
+/*Main colors*/
+$blue: #0a2640;
+$light-blue: #1c3d5b;
+$green: #65e4a3;
+$green-border: #69e6a6;
+$white: #ffffff;
+$black: #000000;
+$gray: #777777;
+
+/*Font families*/
+$manrope: "Manrope", sans-serif;
+$open-sans: "Open Sans", sans-serif;
+$work-sans: "Work Sans", sans-serif;
+
+/*Screen sizes*/
+$mobile: 767px;
+$tablet: 1060px;
+
+/*Mixins*/
+@mixin container {
+  width: 85%;
+  margin: 0 auto;
+}
+@mixin tablet-container {
+  width: 95%;
+  margin: 0 auto;
+}
+/*Reset*/
+@import "reset";
+
+/*Box-sizing*/
+* {
+  box-sizing: border-box;
+}
+/*Class for h1 and h2*/
+.title {
+  font-family: $manrope;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3em;
+  line-height: 1.5em;
+
+  color: $black;
+
+  &_white {
+    color: $white;
+  }
+
+  &_center {
+    text-align: center;
+  }
+}
+
+/*Class for button*/
+.btn {
+  border: 2px solid $blue;
+  border-radius: 56px;
+  padding: 16px 56px;
+
+  font-family: $open-sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: $blue;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &_small {
+    padding: 8px 40px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &_smallest {
+    padding: 1px 14px;
+    font-size: 13px;
+    line-height: 28px;
+  }
+
+  &_blue {
+    background: $blue;
+    color: $white;
+  }
+
+  &_green {
+    background: $green;
+    border-color: $green-border;
+  }
+
+  &_white-border {
+    border-color: $white;
+  }
+}
+
+/*Class for section1 (Lera)*/
+.header {
+  @include container;
+  width: 1400px;
+  height: 798px;
+  overflow: hidden;
+  background-color: $blue;
+  margin-bottom: 61px;
+}
+/*Логотип*/
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 33px;
+  margin-bottom: 64px;
+  &__card {
+    display: flex;
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+  }
+  &__link {
+    text-decoration: none;
+    color: $white;
+    border: 1px solid white;
+    font-family: $open-sans;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-right: 40px;
+  }
+}
+/*Под логотипом*/
+.header-section {
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    width: 1200px;
+  }
+  &__sidebar {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  &__text {
+    font-family: $open-sans;
+    font-size: 1em;
+    color: $white;
+  }
+}
+.btn {
+  display: flex;
+}
+/*блок картинок справа*/
+.header-section-img {
+  width: 42%;
+  height: 423px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 21px;
+  &__img1 {
+    grid-area: 1/1/2/3;
+  }
+  &__img2 {
+    grid-area: 2/1/2/3;
+  }
+  &__img3 {
+    grid-area: 2/2/3/3;
+  }
+}
+/*логотипы снизу*/
+.header-section-logo {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 87px;
+  background-position: top;
+  background: linear-gradient(
+    90deg,
+    #0a2640 0%,
+    rgba(10, 38, 64, 0.109375) 31.6%,
+    rgba(10, 38, 64, 0) 72.89%,
+    #0a2640 97.87%
+  );
+}
+
+/*Class for section2 (Anna)*/
+.block2__cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.block2__card1 {
+  display: flex;
+  flex-direction: column;
+}
+.block2__card2 {
+  display: flex;
+  flex-direction: column;
+}
+.block2__card3 {
+  display: flex;
+  flex-direction: column;
+}
+.explorepage {
+  display: flex;
+  flex-direction: row;
+}
+.arrow-right-icon {
+  width: 7px;
+  height: 14px;
+  top: 7px;
+  left: 12px;
+}
+
+h4 {
+  font-family: $open-sans;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: rgba(119, 119, 119, 1);
+}
+
+/*Class for section3 (Katya G.)*/
+
+/*Class for section4 (Katya P.)*/
+
+.block4 {
+  &__container {
+    height: 1300px;
+    background-color: $blue;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    margin-left: 130px;
+    margin-right: 80px;
+    width: 870px;
+    height: 139px;
+  }
+
+  &__button {
+    display: flex;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    margin-right: 30px;
+    margin-left: 20px;
+  }
+}
+
+.cards {
+  display: flex;
+  margin: 70px 50px 50px 70px;
+}
+
+.card {
+  width: 350px;
+  background-color: $white;
+  border-radius: 10px;
+  &__text {
+    width: 270px;
+  }
+}
+
+.photo {
+  width: 1100px;
+  height: 403px;
+  border-radius: 24px;
+}
+
+/*Class for section5 (Nataly)*/
+
+/*Class for section6 (Dinara)*/
+.footer {
+  @include container;
+
+  &__container {
+    height: 391px;
+  }
+
+  &__container_blue {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+
+    background-color: $blue;
+    border-radius: 12px;
+    margin-bottom: 184px;
+  }
+  //Ellipse
+  &__container_blue::before {
+    content: "";
+    position: absolute;
+    left: 38.83%;
+    right: -46.58%;
+    top: -269.57%;
+    bottom: 38.87%;
+    height: 1293px;
+    width: 1293px;
+    border-radius: 646.5px;
+    background-color: $light-blue;
+    z-index: -1;
+  }
+
+  &__container_flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 7vw;
+  }
+
+  &__subscribe {
+    width: 55%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  &__form {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 24px;
+  }
+
+  &__input {
+    flex-grow: 1;
+    background: $white;
+    border: 2px solid $white;
+    border-radius: 240px;
+    padding-left: 32px;
+
+    font-family: $open-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  &__card {
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+  &__card:first-of-type {
+    margin-right: 12.8vw;
+    gap: 40px;
+  }
+
+  &_paragraph {
+    width: 21.4vw;
+
+    font-family: $open-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+
+    color: $gray;
+  }
+  &_paragraph:first-of-type {
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    font-family: $open-sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  &__link {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    font-family: $open-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: $gray;
+  }
+
+  @media (max-width: $tablet) {
+    @include tablet-container;
+    &__subscribe {
+      width: 100%;
+    }
+    &__card:first-of-type {
+      margin-right: 6vw;
+    }
+  }
+}
+>>>>>>> a3e8327cf7d5d224c7271b713682409694b1d509
