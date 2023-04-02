@@ -227,50 +227,116 @@ h4 {
 /*Class for section4 (Katya P.)*/
 
 .block4 {
-  &__container {
-    height: 1300px;
+  max-width: 100%;
+
+  &__blue {
     background-color: $blue;
+    height: 797px;
   }
 
   &__title {
+    @include container;
     display: flex;
-    align-items: center;
-    margin-left: 130px;
-    margin-right: 80px;
-    width: 870px;
-    height: 139px;
+    padding-top: 3em;
   }
 
-  &__button {
+&__button-container {
     display: flex;
-    width: 72px;
-    height: 72px;
+    padding-top: 3em;
+}
+
+&__button {
     border-radius: 50%;
     border: none;
     background-color: transparent;
-    margin-right: 30px;
-    margin-left: 20px;
   }
-}
 
-.cards {
+&__cards {
   display: flex;
-  margin: 70px 50px 50px 70px;
+  @include container;
+  margin-top: 3em;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2em;
 }
 
-.card {
-  width: 350px;
+&__card {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
   background-color: $white;
   border-radius: 10px;
-  &__text {
-    width: 270px;
-  }
+  align-items: center;
+  padding-top: 1em;
 }
 
-.photo {
-  width: 1100px;
-  height: 403px;
+&__text {
+    width: 75%;
+    font-family: $open-sans;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+&__name {
+  display: flex;
+  width: 100%;
+  margin: 2em;
+  padding: 2em;
+  gap: 1em;
+}
+
+&__names {
+    font-family: $open-sans;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    color: $blue;
+  }
+
+  &__position {
+    font-family: $open-sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+    color: $blue;
+  }
+
+  &__img {width: 58px;
+    height: 58px;
+}
+
+&__about {
+@include container;
+}
+
+&__photo {
+  max-width: 100%;
+  width: 100%;
   border-radius: 24px;
+}
+
+&__accordion {
+  display: flex;
+  justify-content: space-between;
+}
+
+&__paragraph {
+flex-basis: 40%;
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 56px;
+}
+
+&__faq-container {
+  flex-basis: 50%;
+}
+
+&__faq-down {
+  display: flex
+}
 }
 
 /*Class for section5 (Nataly)*/
