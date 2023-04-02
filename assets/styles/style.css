@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Main colors*/
 /*Font families*/
 /*Screen sizes*/
@@ -82,6 +83,92 @@ ol {
 }
 
 /*Class for section1 (Lera)*/
+.header {
+  width: 85%;
+  margin: 0 auto;
+  width: 1400px;
+  height: 798px;
+  overflow: hidden;
+  background-color: #0a2640;
+  margin-bottom: 61px;
+}
+
+/*Логотип*/
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 33px;
+  margin-bottom: 64px;
+}
+.header-container__card {
+  display: flex;
+}
+.header-container__menu {
+  display: flex;
+  align-items: center;
+}
+.header-container__link {
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-right: 40px;
+}
+
+/*Под логотипом*/
+.header-section__wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-left: 100px;
+  width: 1200px;
+}
+.header-section__sidebar {
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.header-section__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  color: #ffffff;
+}
+
+.btn {
+  display: flex;
+}
+
+/*блок картинок справа*/
+.header-section-img {
+  width: 42%;
+  height: 423px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 21px;
+}
+.header-section-img__img1 {
+  grid-area: 1/1/2/3;
+}
+.header-section-img__img2 {
+  grid-area: 2/1/2/3;
+}
+.header-section-img__img3 {
+  grid-area: 2/2/3/3;
+}
+
+/*логотипы снизу*/
+.header-section-logo {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 87px;
+  background-position: top;
+  background: linear-gradient(90deg, #0a2640 0%, rgba(10, 38, 64, 0.109375) 31.6%, rgba(10, 38, 64, 0) 72.89%, #0a2640 97.87%);
+}
+
 /*Class for section2 (Anna)*/
 .block2__cards {
   display: flex;
