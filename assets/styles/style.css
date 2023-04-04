@@ -277,26 +277,46 @@ h3 {
   margin: 0 auto;
   background-color: #ffffff;
 }
-
-.btn_blue {
-  margin-top: 3%;
+.customers .btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: start;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
 }
-
-.customers-section-title {
-  font-family: "Manrope", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.9em;
-  line-height: 156%;
-  color: #000000;
+.customers .btn .btn:hover,
+.customers .btn .btn:focus {
+  color: #ffffff;
+  outline: 0;
 }
-
-.wrapper-img {
+.customers .btn_blue {
+  border-color: #0a2640;
+  color: #ffffff;
+  box-shadow: 0 0 40px 40px #0a2640 inset, 0 0 0 0 #0a2640;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  margin-top: 5%;
+}
+.customers .btn_blue:hover {
+  box-shadow: 0 0 10px 0 #0a2640 inset, 0 0 10px 4px #0a2640;
+  color: #0a2640;
+}
+.customers .wrapper-img {
   flex-basis: 45%;
   position: relative;
 }
-
-.customers-sidebar {
+.customers .customers-sidebar {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -304,8 +324,7 @@ h3 {
   flex-basis: 45%;
   padding-top: 5%;
 }
-
-.customers-section-1 {
+.customers .customers-section-1 {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -313,30 +332,30 @@ h3 {
   max-height: 610px;
   margin-top: 5%;
 }
-.customers-section-1__img {
+.customers .customers-section-1__img {
   max-width: 100%;
   max-height: 506px;
 }
-.customers-section-1__img-diagram {
+.customers .customers-section-1__img-diagram {
   max-width: 100%;
   max-height: 388px;
   position: absolute;
   left: 30%;
   top: 35%;
 }
-.customers-section-1__items {
+.customers .customers-section-1__items {
   padding-top: 10%;
 }
-.customers-section-1__item {
+.customers .customers-section-1__item {
   display: inline-flex;
   align-items: center;
   margin-bottom: 5%;
 }
-.customers-section-1__icon {
+.customers .customers-section-1__icon {
   max-width: 100%;
   max-height: 100%;
 }
-.customers-section-1__text {
+.customers .customers-section-1__text {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -345,8 +364,15 @@ h3 {
   padding-left: 2vw;
   color: #000000;
 }
-
-.customers-section-2 {
+.customers .customers-section-1 .customers-section-title {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.9em;
+  line-height: 156%;
+  color: #000000;
+}
+.customers .customers-section-2 {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -355,13 +381,13 @@ h3 {
   margin-bottom: 25%;
   max-height: 692px;
 }
-.customers-section-2 .customers-section-title {
+.customers .customers-section-2 .customers-section-title {
   margin-top: 10%;
 }
-.customers-section-2__items {
+.customers .customers-section-2__items {
   padding-top: 10%;
 }
-.customers-section-2__item {
+.customers .customers-section-2__item {
   display: inline-flex;
   align-items: center;
   width: 100%;
@@ -370,14 +396,14 @@ h3 {
   border-radius: 4px;
   margin-bottom: 5%;
 }
-.customers-section-2__item_blue {
+.customers .customers-section-2__item_blue {
   background: #0a2640;
 }
-.customers-section-2__icon {
+.customers .customers-section-2__icon {
   max-width: 100%;
   margin: 5% 3% 5% 5%;
 }
-.customers-section-2__text {
+.customers .customers-section-2__text {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -385,14 +411,14 @@ h3 {
   line-height: 175%;
   color: #000000;
 }
-.customers-section-2__text_white {
+.customers .customers-section-2__text_white {
   color: #ffffff;
 }
-.customers-section-2__img {
+.customers .customers-section-2__img {
   max-width: 100%;
   max-height: 523px;
 }
-.customers-section-2__img-diagram {
+.customers .customers-section-2__img-diagram {
   max-width: 100%;
   max-height: 388px;
   position: absolute;
