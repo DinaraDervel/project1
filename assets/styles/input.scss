@@ -198,6 +198,18 @@ $tablet: 1060px;
 /*Class for section2 (Anna)*/
 /*Class for section2 (Anna)*/
 /*Block2 Cards*/
+.block2{
+  @include container;
+  &__title1{
+    font-family: $open-sans;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: rgba(119, 119, 119, 1);
+    text-align: center;
+
+  }
+}
 .block2-cards {
   display: flex;
   flex-direction: row;
@@ -247,15 +259,7 @@ $tablet: 1060px;
   margin-top: 32px;
 }
 
-h4 {
-  font-family: $open-sans;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-  color: rgba(119, 119, 119, 1);
-  text-align: center;
-}
-h3 {
+h3{
   font-family: $open-sans;
   font-weight: 400;
   font-size: 24px;
