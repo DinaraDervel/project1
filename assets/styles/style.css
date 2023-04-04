@@ -422,7 +422,7 @@ h3 {
   display: flex;
   padding-top: 10vh;
 }
-.block4__button {
+.block4__button-left, .block4__button-right {
   border-radius: 50%;
   border: none;
   background-color: transparent;
@@ -435,7 +435,8 @@ h3 {
   margin-top: 4vw;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 2vw;
+  overflow: hidden;
+  position: relative;
 }
 .block4__card {
   flex-basis: 30%;
@@ -445,6 +446,9 @@ h3 {
   border-radius: 10px;
   align-items: center;
   padding-top: 1em;
+  float: left;
+  position: relative;
+  margin-right: 2em;
 }
 .block4__text {
   width: 75%;

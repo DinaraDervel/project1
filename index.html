@@ -19,6 +19,9 @@
       rel="stylesheet"
     />
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
     <title>Boldo</title>
   </head>
 
@@ -299,13 +302,13 @@
             </h2>
             </div>
             <div class="block4__button-container">
-              <button type="button" class="block4__button">
+              <button type="button" class="block4__button-left">
                 <img
                   src="/assets/images/block4/Group 233.png"
                   alt="left"
                 />
               </button>
-              <button type="button" class="block4__button">
+              <button type="button" class="block4__button-right">
                 <img
                   src="/assets/images/block4/Group 232.png"
                   alt="right"
@@ -365,6 +368,26 @@
               </div>
               </div>
             </div>
+<!--test slider-->
+            <div class="block4__card">
+              <p class="block4__text">
+                "Buyer buzz partner network disruptive non-disclosure agreement
+                business"
+              </p>
+              <div class="block4__name">
+                <img
+                  src="assets/images/block4/Ellipse 4.png"
+                  alt="albus"
+                  class="block4__img"
+                />
+                <div>
+                <p class="block4__names">Albus Dumbledore</p>
+                <p class="block4__position">Manager @ Howarts</p>
+              </div>
+              </div>
+            </div>
+
+
           </div>
           </div>
           <div class="block4__about">
@@ -474,5 +497,31 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>$(document).ready(function(){
+      $('.block4__cards').slick({
+        slidesToShow: 3,
+        autoplay: false,
+        dots: false,
+        arrows: true,
+        prevArrow: $('.block4__button-left'),
+        nextArrow: $('.block4__button-right'),
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1
+            }
+          },
+          {
+            breakpoint: 1060,
+            settings: {
+              slidesToShow: 2
+            },
+          }
+        ]
+
+      });
+    });</script>
   </body>
 </html>

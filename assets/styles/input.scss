@@ -206,13 +206,12 @@ $tablet: 1060px;
   justify-content: center;
   margin-top: 78px;
   gap: 100px;
-
 }
 .block2-card1 {
   display: flex;
   flex-direction: column;
-  
-  align-content:center;
+
+  align-content: center;
 }
 .block2-card2 {
   display: flex;
@@ -229,22 +228,22 @@ $tablet: 1060px;
   flex-direction: row;
 }
 
-.explorepage-link{
+.explorepage-link {
   margin-top: 28px;
   font-family: $open-sans;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   color: rgba(10, 38, 64, 1);
-  text-decoration:none;
-  border-bottom:  solid,rgba(10, 38, 64, 1);
+  text-decoration: none;
+  border-bottom: solid, rgba(10, 38, 64, 1);
 }
 .arrow-right-icon {
   width: 24px;
   height: 26px;
   top: 7px;
   left: 12px;
-  margin-left:17px ;
+  margin-left: 17px;
   margin-top: 32px;
 }
 
@@ -256,7 +255,7 @@ h4 {
   color: rgba(119, 119, 119, 1);
   text-align: center;
 }
-h3{
+h3 {
   font-family: $open-sans;
   font-weight: 400;
   font-size: 24px;
@@ -264,7 +263,7 @@ h3{
   color: rgba(0, 0, 0, 1);
   margin-top: 24px;
 }
-.paragraph2{
+.paragraph2 {
   margin-top: 12px;
   font-family: $open-sans;
   font-weight: 400;
@@ -273,7 +272,6 @@ h3{
   color: rgba(119, 119, 119, 1);
   text-align: left;
 }
-
 
 /*Class for section3 (Katya G.)*/
 .customers {
@@ -446,7 +444,8 @@ h3{
     padding-top: 10vh;
   }
 
-  &__button {
+  &__button-left,
+  &__button-right {
     border-radius: 50%;
     border: none;
     background-color: transparent;
@@ -459,7 +458,10 @@ h3{
     margin-top: 4vw;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 2vw;
+    // gap: 2em;
+
+    overflow: hidden;
+    position: relative;
   }
 
   &__card {
@@ -470,6 +472,10 @@ h3{
     border-radius: 10px;
     align-items: center;
     padding-top: 1em;
+
+    float: left;
+    position: relative;
+    margin-right: 2em;
   }
 
   &__text {
@@ -550,10 +556,10 @@ h3{
 
   &__faq {
     font-family: $open-sans;
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 32px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
   }
 
   &__down {
@@ -561,7 +567,6 @@ line-height: 32px;
     height: 1.5em;
     margin-top: 0.5em;
   }
-
 }
 
 /*Class for section5 (Nataly)*/
