@@ -385,18 +385,23 @@ h4 {
 
   &__blue {
     background-color: $blue;
-    height: 797px;
+    padding-bottom: 10vh;
+  }
+
+  &__titled {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10vh;
   }
 
   &__title {
-    @include container;
-    display: flex;
-    padding-top: 3em;
+    flex-basis: 60%;
   }
 
   &__button-container {
     display: flex;
-    padding-top: 3em;
+    padding-top: 10vh;
   }
 
   &__button {
@@ -407,11 +412,12 @@ h4 {
 
   &__cards {
     display: flex;
+    flex-wrap: wrap;
     @include container;
-    margin-top: 3em;
+    margin-top: 4vw;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 2em;
+    gap: 2vw;
   }
 
   &__card {
@@ -469,16 +475,19 @@ h4 {
     max-width: 100%;
     width: 100%;
     border-radius: 24px;
+    margin-top: 15vh;
   }
 
   &__accordion {
     display: flex;
     justify-content: space-between;
+    padding-top: 7vh;
+    padding-bottom: 5vh;
   }
 
   &__paragraph {
     flex-basis: 40%;
-    font-family: "Manrope";
+    font-family: $manrope;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -486,12 +495,31 @@ h4 {
   }
 
   &__faq-container {
-    flex-basis: 50%;
+    flex-basis: 45%;
+    height: 160px;
   }
 
   &__faq-down {
     display: flex;
+    justify-content: space-between;
+    padding-top: 2vh;
+    padding-bottom: 1vh;
   }
+
+  &__faq {
+    font-family: $open-sans;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 32px;
+  }
+
+  &__down {
+    width: 1.5em;
+    height: 1.5em;
+    margin-top: 0.5em;
+  }
+
 }
 
 /*Class for section5 (Nataly)*/
