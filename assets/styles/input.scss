@@ -196,33 +196,56 @@ $tablet: 1060px;
 }
 
 /*Class for section2 (Anna)*/
-.block2__cards {
+/*Class for section2 (Anna)*/
+/*Block2 Cards*/
+.block2-cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 auto;
+  justify-content: center;
+  margin-top: 78px;
+  gap: 100px;
+
 }
-.block2__card1 {
+.block2-card1 {
+  display: flex;
+  flex-direction: column;
+  
+  align-content:center;
+}
+.block2-card2 {
   display: flex;
   flex-direction: column;
 }
-.block2__card2 {
+.block2-card3 {
   display: flex;
   flex-direction: column;
 }
-.block2__card3 {
-  display: flex;
-  flex-direction: column;
-}
+
+/* Explore page */
 .explorepage {
   display: flex;
   flex-direction: row;
 }
+
+.explorepage-link{
+  margin-top: 28px;
+  font-family: $open-sans;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: rgba(10, 38, 64, 1);
+  text-decoration:none;
+  border-bottom:  solid,rgba(10, 38, 64, 1);
+}
 .arrow-right-icon {
-  width: 7px;
-  height: 14px;
+  width: 24px;
+  height: 26px;
   top: 7px;
   left: 12px;
+  margin-left:17px ;
+  margin-top: 32px;
 }
 
 h4 {
@@ -231,7 +254,26 @@ h4 {
   font-size: 20px;
   line-height: 32px;
   color: rgba(119, 119, 119, 1);
+  text-align: center;
 }
+h3{
+  font-family: $open-sans;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: rgba(0, 0, 0, 1);
+  margin-top: 24px;
+}
+.paragraph2{
+  margin-top: 12px;
+  font-family: $open-sans;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: rgba(119, 119, 119, 1);
+  text-align: left;
+}
+
 
 /*Class for section3 (Katya G.)*/
 .customers {
