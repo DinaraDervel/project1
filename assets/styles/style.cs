@@ -456,7 +456,6 @@ h3 {
   border-radius: 50%;
   border: none;
   background-color: transparent;
-  padding-left: 2vw;
 }
 .block4__cards {
   display: flex;
@@ -476,18 +475,17 @@ h3 {
   background-color: #ffffff;
   border-radius: 10px;
   align-items: center;
-  padding-top: 4vh;
+  padding-top: 1em;
   float: left;
   position: relative;
   margin-right: 2em;
 }
 .block4__text {
-  width: 70%;
+  width: 75%;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 36px;
-  margin-left: 3vw;
+  font-size: 3em;
+  line-height: 4vw;
 }
 .block4__name {
   display: flex;
@@ -683,4 +681,4 @@ h3 {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.cs.map */
