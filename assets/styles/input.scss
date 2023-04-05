@@ -66,6 +66,10 @@ $tablet: 1024px;
 
   &:hover {
     cursor: pointer;
+    color: $white;
+    box-shadow: 0 0 15px 15px $light-blue inset, 0 0 5px 5px $white;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
   }
 
   &_small {
@@ -81,15 +85,27 @@ $tablet: 1024px;
   }
 
   &_blue {
-    background: $blue;
+    border-color: $blue;
     color: $white;
+    box-shadow: 0 0 40px 40px $blue inset, 0 0 0 0 $blue;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
   }
-
+  &_blue:hover {
+    box-shadow: 0 0 10px 0 $blue inset, 0 0 10px 4px $white;
+    color: $blue;
+  }
   &_green {
     background: $green;
     border-color: $green-border;
+    box-shadow: 0 0 40px 40px $green inset, 0 0 0 0 $green;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
   }
-
+  &_green:hover {
+    box-shadow: 0 0 40px 0 $white inset, 0 0 10px 4px $green;
+    color: $blue;
+  }
   &_white-border {
     border-color: $white;
   }
@@ -743,7 +759,9 @@ h3 {
 
   @media (max-width: $tablet) {
     @include tablet-container;
-
+    &__container_flex {
+      justify-content: space-between;
+    }
     &__subscribe {
       width: 100%;
     }
@@ -756,7 +774,6 @@ h3 {
   @media (max-width: $mobile) {
     &__container_flex {
       flex-wrap: wrap;
-      justify-content: space-between;
     }
     &__card:first-of-type {
       flex-basis: 100%;
