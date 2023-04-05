@@ -694,7 +694,7 @@ h3 {
     gap: 40px;
   }
 
-  &_paragraph {
+  &__paragraph {
     width: 21.4vw;
 
     font-family: $open-sans;
@@ -737,9 +737,11 @@ h3 {
 
   @media (max-width: $tablet) {
     @include tablet-container;
+
     &__subscribe {
       width: 100%;
     }
+
     &__card:first-of-type {
       margin-right: 2vw;
     }
@@ -753,8 +755,12 @@ h3 {
     &__card:first-of-type {
       flex-basis: 100%;
       order: 4;
-      flex-direction: row;
+      flex-flow: row wrap;
       justify-content: space-between;
+    }
+
+    &__paragraph:first-of-type {
+      flex-basis: 40%;
     }
   }
 }

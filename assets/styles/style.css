@@ -640,7 +640,7 @@ h3 {
   margin-right: 10.3vw;
   gap: 40px;
 }
-.footer_paragraph {
+.footer__paragraph {
   width: 21.4vw;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -695,8 +695,11 @@ h3 {
   .footer__card:first-of-type {
     flex-basis: 100%;
     order: 4;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-between;
+  }
+  .footer__paragraph:first-of-type {
+    flex-basis: 40%;
   }
 }
 
