@@ -607,6 +607,11 @@ h3{
     height: 1.5em;
     margin-top: 0.5em;
   }
+
+  @media (max-width: $tablet) {
+    @include tablet-container;
+  }
+
 }
 
 /*Class for section5 (Nataly)*/

@@ -560,6 +560,12 @@ h3 {
   height: 1.5em;
   margin-top: 0.5em;
 }
+@media (max-width: 1060px) {
+  .block4 {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
 
 /*Class for section5 (Nataly)*/
 /*Class for section6 (Dinara)*/
