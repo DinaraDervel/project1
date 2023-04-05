@@ -14,7 +14,7 @@ $work-sans: "Work Sans", sans-serif;
 
 /*Screen sizes*/
 $mobile: 767px;
-$tablet: 1060px;
+$tablet: 1024px;
 
 /*Mixins*/
 @mixin container {
@@ -198,16 +198,15 @@ $tablet: 1060px;
 /*Class for section2 (Anna)*/
 /*Class for section2 (Anna)*/
 /*Block2 Cards*/
-.block2{
+.block2 {
   @include container;
-  &__title1{
+  &__title1 {
     font-family: $open-sans;
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
     color: rgba(119, 119, 119, 1);
     text-align: center;
-
   }
 }
 .block2-cards {
@@ -259,7 +258,7 @@ $tablet: 1060px;
   margin-top: 32px;
 }
 
-h3{
+h3 {
   font-family: $open-sans;
   font-weight: 400;
   font-size: 24px;
@@ -611,7 +610,6 @@ h3{
   @media (max-width: $tablet) {
     @include tablet-container;
   }
-
 }
 
 /*Class for section5 (Nataly)*/
@@ -620,10 +618,6 @@ h3{
 .footer {
   @include container;
 
-  &__container {
-    height: 391px;
-  }
-
   &__container_blue {
     position: relative;
     z-index: 0;
@@ -631,7 +625,8 @@ h3{
 
     background-color: $blue;
     border-radius: 12px;
-    margin-bottom: 184px;
+    padding: 4.5em 0;
+    margin-bottom: 11.5em;
   }
   //Ellipse
   &__container_blue::before {
@@ -653,6 +648,7 @@ h3{
     flex-direction: row;
     justify-content: flex-start;
     gap: 7vw;
+    margin-bottom: 7em;
   }
 
   &__subscribe {
@@ -661,7 +657,7 @@ h3{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 3em;
   }
 
   &__form {
@@ -746,6 +742,19 @@ h3{
     }
     &__card:first-of-type {
       margin-right: 2vw;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    &__container_flex {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &__card:first-of-type {
+      flex-basis: 100%;
+      order: 4;
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
 }
