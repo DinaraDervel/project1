@@ -84,12 +84,12 @@ ol {
 /*Class for section1 (Lera)*/
 .header {
   width: 100%;
-  height: 798px;
+  height: 49.875em;
   overflow: hidden;
   position: relative;
   z-index: 0;
   background-color: #0a2640;
-  margin-bottom: 61px;
+  margin-bottom: 3.8em;
 }
 
 /*Ellipse*/
@@ -97,8 +97,8 @@ ol {
   content: "";
   position: absolute;
   left: 55.5%;
-  top: -789px;
-  height: 1293px;
+  top: -49.875em;
+  height: 80.8em;
   width: 92.36%;
   border-radius: 46.18%;
   background-color: #1c3d5b;
@@ -110,8 +110,8 @@ ol {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  margin-top: 33px;
-  margin-bottom: 64px;
+  margin-top: 2em;
+  margin-bottom: 4em;
 }
 .header-container__card {
   display: flex;
@@ -127,12 +127,13 @@ ol {
   font-weight: 600;
   font-size: 1em;
   line-height: 1.5em;
-  margin-right: 2.86%;
+  margin-right: 2.5em;
 }
 
 .header-section {
   width: 85%;
   margin: 0 auto;
+  height: 26.44em;
 }
 .header-section__wrapper {
   display: flex;
@@ -141,7 +142,6 @@ ol {
 }
 .header-section__sidebar {
   width: 49.3%;
-  height: 310px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -152,37 +152,43 @@ ol {
   font-size: 1em;
   line-height: 1.75em;
   color: #ffffff;
-  margin-bottom: 40px;
+  margin-bottom: 2.5em;
 }
 
 .button {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  gap: 1.25em;
 }
 
 .header-section-img {
   width: 44%;
-  height: 423px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 26px;
+  grid-template-columns: 43% 57%;
+  grid-template-rows: 58.4% 41.6%;
+  gap: 1.625em;
 }
 .header-section-img__img1 {
+  width: 100%;
+  max-width: 100%;
   grid-area: 1/1/2/3;
 }
 .header-section-img__img2 {
-  grid-area: 2/1/2/3;
+  width: 100%;
+  max-width: 100%;
+  grid-area: 2/1/3/2;
 }
 .header-section-img__img3 {
+  width: 100%;
+  max-width: 100%;
   grid-area: 2/2/3/3;
 }
 
 .header-section-logo {
-  margin-top: 89px;
+  margin-top: 5.56em;
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 87px;
+  margin-bottom: 5.44em;
 }
 .header-section-logo__pic:first-child, .header-section-logo__pic:last-child {
   opacity: 0.3;
