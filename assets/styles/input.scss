@@ -550,7 +550,7 @@ h3 {
   &__name {
     display: flex;
     width: 100%;
-    margin: 2em;
+    margin-left: 1em;
     padding: 2em;
     gap: 1em;
   }
@@ -631,6 +631,16 @@ h3 {
 
   @media (max-width: $tablet) {
     @include tablet-container;
+  }
+
+  @media (max-width: $mobile) {
+    &__titled {
+      flex-wrap: wrap;
+    }
+
+    &__accordion {
+      flex-wrap: wrap;
+    }
   }
 }
 

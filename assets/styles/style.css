@@ -516,7 +516,7 @@ h3 {
 .block4__name {
   display: flex;
   width: 100%;
-  margin: 2em;
+  margin-left: 1em;
   padding: 2em;
   gap: 1em;
 }
@@ -588,6 +588,14 @@ h3 {
   .block4 {
     width: 95%;
     margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .block4__titled {
+    flex-wrap: wrap;
+  }
+  .block4__accordion {
+    flex-wrap: wrap;
   }
 }
 
