@@ -213,11 +213,11 @@ ol {
 }
 
 /*Class for section2 (Anna)*/
-/*Class for section2 (Anna)*/
 /*Block2 Cards*/
 .block2 {
   width: 85%;
   margin: 0 auto;
+  /* Explore page */
 }
 .block2__title1 {
   font-family: "Open Sans", sans-serif;
@@ -227,60 +227,20 @@ ol {
   color: rgb(119, 119, 119);
   text-align: center;
 }
-
-.block2-cards {
+.block2__cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 auto;
-  justify-content: center;
   margin-top: 78px;
   gap: 100px;
 }
-
-.block2-card1 {
+.block2__card {
   display: flex;
   flex-direction: column;
   align-content: center;
 }
-
-.block2-card2 {
-  display: flex;
-  flex-direction: column;
-}
-
-.block2-card3 {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Explore page */
-.explorepage {
-  display: flex;
-  flex-direction: row;
-}
-
-.explorepage-link {
-  margin-top: 28px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  color: rgb(10, 38, 64);
-  text-decoration: none;
-  border-bottom: solid, rgb(10, 38, 64);
-}
-
-.arrow-right-icon {
-  width: 24px;
-  height: 26px;
-  top: 7px;
-  left: 12px;
-  margin-left: 17px;
-  margin-top: 32px;
-}
-
-h3 {
+.block2__title3 {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -288,8 +248,7 @@ h3 {
   color: rgb(0, 0, 0);
   margin-top: 24px;
 }
-
-.paragraph2 {
+.block2__paragraph2 {
   margin-top: 12px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -297,6 +256,31 @@ h3 {
   line-height: 32px;
   color: rgb(119, 119, 119);
   text-align: left;
+}
+.block2__explorepage {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid rgb(10, 38, 64);
+  text-align: center;
+  align-self: start;
+  padding-bottom: 10px;
+}
+.block2__explorepage-link {
+  margin-top: 28px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: rgb(10, 38, 64);
+  text-decoration: none;
+}
+.block2__arrow-right-icon {
+  width: 24px;
+  height: 26px;
+  top: 7px;
+  left: 12px;
+  margin-left: 17px;
+  margin-top: 32px;
 }
 
 /*Class for section3 (Katya G.)*/
