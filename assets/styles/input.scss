@@ -115,109 +115,208 @@ $tablet: 1024px;
 /*Class for section1 (Lera)*/
 .header {
   width: 100%;
-  height: 49.875em;
   overflow: hidden;
   position: relative;
   z-index: 0;
   background-color: $blue;
   margin-bottom: 3.8em;
-}
-/*Ellipse*/
-.header::before {
-  content: "";
-  position: absolute;
-  left: 55.5%;
-  top: -49.875em;
-  height: 80.8em;
-  width: 92.36%;
-  border-radius: 46.18%;
-  background-color: $light-blue;
-  z-index: -1;
-}
-.header-container {
-  @include container;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 2em;
-  margin-bottom: 4em;
-  &__card {
-    display: flex;
-  }
-  &__menu {
-    display: flex;
-    align-items: center;
-  }
-  &__link {
-    text-decoration: none;
-    color: $white;
-    font-family: $open-sans;
-    font-weight: 600;
-    font-size: 1em;
-    line-height: 1.5em;
-    margin-right: 2.5em;
-  }
-}
-.header-section {
-  @include container;
-  height: 26.44em;
-  &__wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  &__sidebar {
-    width: 49.3%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-self: center;
-  }
-  &__text {
-    font-family: $open-sans;
-    font-size: 1em;
-    line-height: 1.75em;
-    color: $white;
-    margin-bottom: 2.5em;
-  }
-}
-.button {
-  display: flex;
-  justify-content: flex-start;
-  gap: 1.25em;
-}
-.header-section-img {
-  width: 44%;
-  display: grid;
-  grid-template-columns: 43% 57%;
-  grid-template-rows: 58.4% 41.6%;
-  gap: 1.625em;
-  &__img1 {
-    width: 100%;
-    max-width: 100%;
-    grid-area: 1/1/2/3;
-  }
-  &__img2 {
-    width: 100%;
-    max-width: 100%;
-    grid-area: 2/1/3/2;
-  }
-  &__img3 {
-    width: 100%;
-    max-width: 100%;
-    grid-area: 2/2/3/3;
-  }
-}
-.header-section-logo {
-  margin-top: 5.56em;
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 5.44em;
-  &__pic:first-child,
-  &__pic:last-child {
-    opacity: 0.3;
-  }
-}
 
+  /*Ellipse*/
+  .header::before {
+    content: "";
+    position: absolute;
+    left: 55.5%;
+    top: -49.875em;
+    height: 80.8em;
+    width: 92.36%;
+    border-radius: 46.18%;
+    background-color: $light-blue;
+    z-index: -1;
+  }
+  .header-container {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+    margin-bottom: 4em;
+    &__card {
+      display: flex;
+    }
+    &__menu {
+      display: flex;
+      align-items: center;
+    }
+    &__link {
+      text-decoration: none;
+      color: $white;
+      font-family: $open-sans;
+      font-weight: 600;
+      font-size: 1em;
+      line-height: 1.5em;
+      margin-right: 2.5em;
+    }
+  }
+  .header-section {
+    @include container;
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__sidebar {
+      width: 49.3%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-self: center;
+    }
+    &__text {
+      font-family: $open-sans;
+      font-size: 1em;
+      line-height: 1.75em;
+      color: $white;
+      margin-bottom: 2.5em;
+    }
+  }
+  .button {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.25em;
+  }
+  .header-section-img {
+    width: 44%;
+    display: grid;
+    grid-template-columns: 43% 57%;
+    grid-template-rows: 58.4% 41.6%;
+    gap: 1.625em;
+    &__img1 {
+      width: 100%;
+      max-width: 100%;
+      grid-area: 1/1/2/3;
+    }
+    &__img2 {
+      width: 100%;
+      max-width: 100%;
+      grid-area: 2/1/3/2;
+    }
+    &__img3 {
+      width: 100%;
+      max-width: 100%;
+      grid-area: 2/2/3/3;
+    }
+  }
+  .header-section-logo {
+    margin-top: 5.56em;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5.44em;
+    gap: 2%;
+    &__pic:first-child,
+    &__pic:last-child {
+      opacity: 0.3;
+    }
+    &__pic {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  @media (max-width: $tablet) {
+    @include tablet-container;
+    .title {
+      font-size: 2em;
+      line-height: 1.4em;
+    }
+    .header-section {
+      &__text {
+        font-size: 0.85em;
+        margin-top: 1em;
+      }
+    }
+    .btn {
+      padding: 10px 28px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 28px;
+      color: $blue;
+
+      &_blue {
+        color: $white;
+      }
+    }
+    .header-section-img {
+      grid-template-rows: 50% 40%;
+      margin-top: 5%;
+    }
+    .header-section-logo {
+      gap: 1em;
+      &__pic {
+        max-width: 60%;
+      }
+    }
+  }
+  @media (max-width: $mobile) {
+    .header {
+      @include container;
+    }
+    .header-container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2em;
+      margin-bottom: 4em;
+      a {
+        display: flex;
+        justify-content: center;
+      }
+      &__logo {
+        width: 70%;
+        margin-bottom: 5%;
+      }
+      &__card {
+        display: flex;
+        justify-content: center;
+      }
+      &__menu {
+        flex-direction: column;
+      }
+      &__link {
+        font-size: 1em;
+        line-height: 1.8em;
+        margin-right: 10vw;
+      }
+    }
+    .header-section {
+      width: 90%;
+      &__wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      &__sidebar {
+        width: fit-content;
+      }
+      &__text {
+        font-size: 1.3em;
+        line-height: 1.5em;
+        margin-bottom: 1em;
+      }
+      .btn {
+        padding: 18px 33px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+      }
+      .header-section-img {
+        width: 80%;
+        width: fit-content;
+        justify-content: center;
+        gap: 1em;
+      }
+      .header-section-logo {
+        display: none;
+      }
+    }
+  }
+}
 /*Class for section2 (Anna)*/
 /*Block2 Cards*/
 .block2 {
