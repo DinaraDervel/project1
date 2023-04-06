@@ -213,68 +213,65 @@ ol {
 }
 
 /*Class for section2 (Anna)*/
+/*Class for section2 (Anna)*/
 /*Block2 Cards*/
-.block2{
-  @include container;
-  &__title1{
-    font-family: $open-sans;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
-    color: rgba(119, 119, 119, 1);
-    text-align: center;
-    
-  }
-&__cards {
+.block2 {
+  width: 85%;
+  margin: 0 auto;
+}
+.block2__title1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: rgb(119, 119, 119);
+  text-align: center;
+}
+
+.block2-cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 auto;
+  justify-content: center;
   margin-top: 78px;
   gap: 100px;
-  }
-&__card {
+}
+
+.block2-card1 {
   display: flex;
   flex-direction: column;
   align-content: center;
 }
-&__title3{
-  font-family: $open-sans;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 36px;
-  color: rgba(0, 0, 0, 1);
-  margin-top: 24px;
-}
-&__paragraph2{
-  margin-top: 12px;
-  font-family: $open-sans;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-  color: rgba(119, 119, 119, 1);
-  text-align: left;
-}
-/* Explore page */
-&__explorepage{
-display: flex;
-flex-direction: row;
-border-bottom: 2px solid rgba(10, 38, 64, 1);
-text-align: center;
-align-self: start;
-padding-bottom: 10px;
 
+.block2-card2 {
+  display: flex;
+  flex-direction: column;
 }
-&__explorepage-link {
+
+.block2-card3 {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Explore page */
+.explorepage {
+  display: flex;
+  flex-direction: row;
+}
+
+.explorepage-link {
   margin-top: 28px;
-  font-family: $open-sans;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  color: rgba(10, 38, 64, 1);
+  color: rgb(10, 38, 64);
   text-decoration: none;
+  border-bottom: solid, rgb(10, 38, 64);
 }
-&__arrow-right-icon {
+
+.arrow-right-icon {
   width: 24px;
   height: 26px;
   top: 7px;
@@ -282,8 +279,25 @@ padding-bottom: 10px;
   margin-left: 17px;
   margin-top: 32px;
 }
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: rgb(0, 0, 0);
+  margin-top: 24px;
 }
 
+.paragraph2 {
+  margin-top: 12px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: rgb(119, 119, 119);
+  text-align: left;
+}
 
 /*Class for section3 (Katya G.)*/
 .customers {
