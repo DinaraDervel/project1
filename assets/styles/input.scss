@@ -329,67 +329,66 @@ $tablet: 1024px;
     color: rgba(119, 119, 119, 1);
     text-align: center;
   }
-&__cards {
-  display: flex;
-flex-direction: row;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  margin-top: 4.785em;
-  gap: 6.25em;
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 4.785em;
+    gap: 6.25em;
   }
-&__card {
-  display: flex;
-  flex-basis: 28%;
-  flex-direction: column;
-  align-content: center;
-}
-&__title3{
-  font-family: $open-sans;
-  font-weight: 400;
-  font-size: 1.5em;
-  line-height:2.25em; ;
-  color: rgba(0, 0, 0, 1);
-  margin-top: 1.5em;
-}
-&__paragraph2{
-  margin-top: 0.75em;
-  font-family: $open-sans;
-  font-weight: 400;
-  font-size: 1.25em;
-  line-height: 2em;
-  color: rgba(119, 119, 119, 1);
-  text-align: left;
-}
-&__foto{
-  max-width: 100%;
-}
-/* Explore page */
-&__explorepage{
-display: flex;
-flex-direction: row;
-border-bottom: 0.125em solid rgba(10, 38, 64, 1);
-text-align: center;
-align-self: start;
-padding-bottom: 0.625em;
-
-}
-&__explorepage-link {
-  margin-top: 1.75em;
-  font-family: $open-sans;
-  font-weight: 700;
-  font-size: 1.25em;
-  line-height: 2/25em;
-  color: rgba(10, 38, 64, 1);
-  text-decoration: none;
-}
-&__arrow-right-icon {
-  width: 1.5em;
-  height: 1.625em;
-  top: 0.438em;
-  left: 0.75em;
-  margin-left: 1.063em;
-  margin-top: 2em;
-}
+  &__card {
+    display: flex;
+    flex-basis: 28%;
+    flex-direction: column;
+    align-content: center;
+  }
+  &__title3 {
+    font-family: $open-sans;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 2.25em;
+    color: rgba(0, 0, 0, 1);
+    margin-top: 1.5em;
+  }
+  &__paragraph2 {
+    margin-top: 0.75em;
+    font-family: $open-sans;
+    font-weight: 400;
+    font-size: 1.25em;
+    line-height: 2em;
+    color: rgba(119, 119, 119, 1);
+    text-align: left;
+  }
+  &__foto {
+    max-width: 100%;
+  }
+  /* Explore page */
+  &__explorepage {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0.125em solid rgba(10, 38, 64, 1);
+    text-align: center;
+    align-self: start;
+    padding-bottom: 0.625em;
+  }
+  &__explorepage-link {
+    margin-top: 1.75em;
+    font-family: $open-sans;
+    font-weight: 700;
+    font-size: 1.25em;
+    line-height: 2/25em;
+    color: rgba(10, 38, 64, 1);
+    text-decoration: none;
+  }
+  &__arrow-right-icon {
+    width: 1.5em;
+    height: 1.625em;
+    top: 0.438em;
+    left: 0.75em;
+    margin-left: 1.063em;
+    margin-top: 2em;
+  }
 }
 
 /*Class for section3 (Katya G.)*/
@@ -679,7 +678,7 @@ padding-bottom: 0.625em;
     border: none;
     background-color: transparent;
     padding-left: 2vw;
-}
+  }
 
   &__button_left:hover {
     cursor: pointer;
