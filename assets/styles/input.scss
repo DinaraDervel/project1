@@ -339,7 +339,7 @@ flex-direction: row;
   }
 &__card {
   display: flex;
-  flex-basis: 30%;
+  flex-basis: 28%;
   flex-direction: column;
   align-content: center;
 }
@@ -347,7 +347,7 @@ flex-direction: row;
   font-family: $open-sans;
   font-weight: 400;
   font-size: 1.5em;
-  line-height:  2.25em; ;
+  line-height:2.25em; ;
   color: rgba(0, 0, 0, 1);
   margin-top: 1.5em;
 }
@@ -360,6 +360,9 @@ flex-direction: row;
   color: rgba(119, 119, 119, 1);
   text-align: left;
 }
+&__foto{
+  max-width: 100%;
+}
 /* Explore page */
 &__explorepage{
 display: flex;
@@ -367,7 +370,7 @@ flex-direction: row;
 border-bottom: 0.125em solid rgba(10, 38, 64, 1);
 text-align: center;
 align-self: start;
-padding-bottom: 0.625m;
+padding-bottom: 0.625em;
 
 }
 &__explorepage-link {
