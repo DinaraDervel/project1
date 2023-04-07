@@ -222,8 +222,8 @@ ol {
 .block2__title1 {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 1.25em;
+  line-height: 2em;
   color: rgb(119, 119, 119);
   text-align: center;
 }
@@ -232,55 +232,56 @@ ol {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 auto;
-  margin-top: 78px;
-  gap: 100px;
+  margin-top: 4.875em;
+  gap: 6.25em;
 }
 .block2__card {
   display: flex;
+  flex-basis: 30%;
   flex-direction: column;
   align-content: center;
 }
 .block2__title3 {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 1.5em;
+  line-height: 2.25em;
   color: rgb(0, 0, 0);
-  margin-top: 24px;
+  margin-top: 1.5em;
 }
 .block2__paragraph2 {
-  margin-top: 12px;
+  margin-top: 0.75em;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 1.25em;
+  line-height: 2em;
   color: rgb(119, 119, 119);
   text-align: left;
 }
 .block2__explorepage {
   display: flex;
   flex-direction: row;
-  border-bottom: 2px solid rgb(10, 38, 64);
+  border-bottom: 0.125em solid rgb(10, 38, 64);
   text-align: center;
   align-self: start;
-  padding-bottom: 10px;
+  padding-bottom: 0.625em;
 }
 .block2__explorepage-link {
-  margin-top: 28px;
+  margin-top: 1.75em;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
+  font-size: 1.25em;
+  line-height: 2.25em;
   color: rgb(10, 38, 64);
   text-decoration: none;
 }
 .block2__arrow-right-icon {
-  width: 24px;
-  height: 26px;
-  top: 7px;
-  left: 12px;
-  margin-left: 17px;
-  margin-top: 32px;
+  width: 1.5em;
+  height: 1.625em;
+  top: 0.438em;
+  left: 0.75em;
+  margin-left: 1.063em;
+  margin-top: 2em;
 }
 
 /*Class for section3 (Katya G.)*/
