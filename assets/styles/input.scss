@@ -669,12 +669,23 @@ $tablet: 1024px;
     padding-top: 10vh;
   }
 
-  &__button-left,
-  &__button-right {
+  &__button {
     border-radius: 50%;
     border: none;
     background-color: transparent;
     padding-left: 2vw;
+}
+
+  &__button_left:hover {
+    cursor: pointer;
+    color: $white;
+    transform: scale(1.1);
+  }
+
+  &__button_right:hover {
+    cursor: pointer;
+    color: $white;
+    transform: scale(1.1);
   }
 
   &__cards {
@@ -793,6 +804,12 @@ $tablet: 1024px;
     width: 1.5em;
     height: 1.5em;
     margin-top: 0.5em;
+  }
+
+  &__down:hover {
+    cursor: pointer;
+    color: $white;
+    transform: scale(1.1);
   }
 
   @media (max-width: $tablet) {

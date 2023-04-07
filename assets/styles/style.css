@@ -247,6 +247,7 @@ ol {
 @media (max-width: 767px) {
   .header .header {
     width: 85%;
+    max-width: 1500px;
     margin: 0 auto;
   }
   .header .header-container {
@@ -622,11 +623,21 @@ ol {
   display: flex;
   padding-top: 10vh;
 }
-.block4__button-left, .block4__button-right {
+.block4__button {
   border-radius: 50%;
   border: none;
   background-color: transparent;
   padding-left: 2vw;
+}
+.block4__button_left:hover {
+  cursor: pointer;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+.block4__button_right:hover {
+  cursor: pointer;
+  color: #ffffff;
+  transform: scale(1.1);
 }
 .block4__cards {
   display: flex;
@@ -731,6 +742,11 @@ ol {
   width: 1.5em;
   height: 1.5em;
   margin-top: 0.5em;
+}
+.block4__down:hover {
+  cursor: pointer;
+  color: #ffffff;
+  transform: scale(1.1);
 }
 @media (max-width: 1024px) {
   .block4 {
