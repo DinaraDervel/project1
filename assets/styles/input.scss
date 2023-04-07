@@ -684,14 +684,14 @@ $tablet: 1024px;
 
   &__blue {
     background-color: $blue;
-    padding-bottom: 10vh;
+    padding-bottom: 7em;
   }
 
   &__titled {
     @include container;
     display: flex;
     justify-content: space-between;
-    padding-top: 10vh;
+    padding-top: 6em;
   }
 
   &__title {
@@ -700,14 +700,14 @@ $tablet: 1024px;
 
   &__button-container {
     display: flex;
-    padding-top: 10vh;
+    padding-top: 5em;
   }
 
   &__button {
     border-radius: 50%;
     border: none;
     background-color: transparent;
-    padding-left: 2vw;
+    padding-left: 1.5em;
   }
 
   &__button_left:hover {
@@ -726,7 +726,7 @@ $tablet: 1024px;
     display: flex;
     flex-wrap: wrap;
     @include container;
-    margin-top: 4vw;
+    margin-top: 4em;
     justify-content: flex-start;
     align-items: flex-start;
     // gap: 2em;
@@ -742,7 +742,7 @@ $tablet: 1024px;
     background-color: $white;
     border-radius: 10px;
     align-items: center;
-    padding-top: 4vh;
+    padding-top: 2em;
 
     float: left;
     position: relative;
@@ -755,7 +755,7 @@ $tablet: 1024px;
     font-weight: 400;
     font-size: 24px;
     line-height: 36px;
-    margin-left: 3vw;
+    margin-left: 2.2em;
   }
 
   &__name {
@@ -795,14 +795,14 @@ $tablet: 1024px;
     max-width: 100%;
     width: 100%;
     border-radius: 24px;
-    margin-top: 15vh;
+    margin-top: 9.5em;
   }
 
   &__accordion {
     display: flex;
     justify-content: space-between;
-    padding-top: 7vh;
-    padding-bottom: 5vh;
+    padding-top: 4em;
+    padding-bottom: 10em;
   }
 
   &__paragraph {
@@ -816,14 +816,13 @@ $tablet: 1024px;
 
   &__faq-container {
     flex-basis: 45%;
-    height: 160px;
   }
 
   &__faq-down {
     display: flex;
     justify-content: space-between;
-    padding-top: 2vh;
-    padding-bottom: 1vh;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
   }
 
   &__faq {
@@ -845,6 +844,16 @@ $tablet: 1024px;
     color: $white;
     transform: scale(1.1);
   }
+
+  @media (min-width: $tablet) {
+    &__title {
+      flex-basis: 50%;
+    }
+
+    &__paragraph {
+      flex-basis: 35%;
+  }
+}
 
   @media (max-width: $tablet) {
     @include tablet-container;

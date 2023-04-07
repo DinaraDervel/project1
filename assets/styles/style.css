@@ -640,7 +640,7 @@ ol {
 }
 .block4__blue {
   background-color: #0a2640;
-  padding-bottom: 10vh;
+  padding-bottom: 7em;
 }
 .block4__titled {
   width: 85%;
@@ -648,20 +648,20 @@ ol {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding-top: 10vh;
+  padding-top: 6em;
 }
 .block4__title {
   flex-basis: 60%;
 }
 .block4__button-container {
   display: flex;
-  padding-top: 10vh;
+  padding-top: 5em;
 }
 .block4__button {
   border-radius: 50%;
   border: none;
   background-color: transparent;
-  padding-left: 2vw;
+  padding-left: 1.5em;
 }
 .block4__button_left:hover {
   cursor: pointer;
@@ -679,7 +679,7 @@ ol {
   width: 85%;
   max-width: 1500px;
   margin: 0 auto;
-  margin-top: 4vw;
+  margin-top: 4em;
   justify-content: flex-start;
   align-items: flex-start;
   overflow: hidden;
@@ -692,7 +692,7 @@ ol {
   background-color: #ffffff;
   border-radius: 10px;
   align-items: center;
-  padding-top: 4vh;
+  padding-top: 2em;
   float: left;
   position: relative;
   margin-right: 2em;
@@ -703,7 +703,7 @@ ol {
   font-weight: 400;
   font-size: 24px;
   line-height: 36px;
-  margin-left: 3vw;
+  margin-left: 2.2em;
 }
 .block4__name {
   display: flex;
@@ -739,13 +739,13 @@ ol {
   max-width: 100%;
   width: 100%;
   border-radius: 24px;
-  margin-top: 15vh;
+  margin-top: 9.5em;
 }
 .block4__accordion {
   display: flex;
   justify-content: space-between;
-  padding-top: 7vh;
-  padding-bottom: 5vh;
+  padding-top: 4em;
+  padding-bottom: 10em;
 }
 .block4__paragraph {
   flex-basis: 40%;
@@ -757,13 +757,12 @@ ol {
 }
 .block4__faq-container {
   flex-basis: 45%;
-  height: 160px;
 }
 .block4__faq-down {
   display: flex;
   justify-content: space-between;
-  padding-top: 2vh;
-  padding-bottom: 1vh;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
 }
 .block4__faq {
   font-family: "Open Sans", sans-serif;
@@ -781,6 +780,14 @@ ol {
   cursor: pointer;
   color: #ffffff;
   transform: scale(1.1);
+}
+@media (min-width: 1024px) {
+  .block4__title {
+    flex-basis: 50%;
+  }
+  .block4__paragraph {
+    flex-basis: 35%;
+  }
 }
 @media (max-width: 1024px) {
   .block4 {
