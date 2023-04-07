@@ -331,7 +331,7 @@ ol {
   flex-wrap: wrap;
   margin: 0 auto;
   margin-top: 4.785em;
-  gap: 6.25;
+  gap: 6.25em;
 }
 .block2__card {
   display: flex;
@@ -348,7 +348,7 @@ ol {
   margin-top: 1.5em;
 }
 .block2__paragraph2 {
-  margin-top: 0.75px;
+  margin-top: 0.75em;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 1.25em;
