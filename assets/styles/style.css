@@ -329,6 +329,7 @@ ol {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: stretch;
   margin: 0 auto;
   margin-top: 4.785em;
   gap: 6.25em;
@@ -337,7 +338,7 @@ ol {
   display: flex;
   flex-basis: 28%;
   flex-direction: column;
-  align-content: center;
+  justify-content: space-between;
 }
 .block2__title3 {
   font-family: "Open Sans", sans-serif;
@@ -353,11 +354,40 @@ ol {
   font-weight: 400;
   font-size: 1.25em;
   line-height: 2em;
-  color: rgb(119, 119, 119);
+  color: #777777;
   text-align: left;
+}
+.block2__paragraph2_black {
+  color: #000000;
+}
+.block2__category {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.75em;
+  align-items: center;
+}
+.block2__title4 {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #0a2640;
+}
+.block2__title4_gray {
+  color: #777777;
+  font-weight: 400;
+}
+.block2__title4_black {
+  color: #000000;
+  font-weight: 400;
 }
 .block2__foto {
   max-width: 100%;
+}
+.block2__button {
+  margin: 5.25em auto;
+  width: 14em;
 }
 .block2__explorepage {
   display: flex;

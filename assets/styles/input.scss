@@ -333,6 +333,7 @@ $tablet: 1024px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: stretch;
     margin: 0 auto;
     margin-top: 4.785em;
     gap: 6.25em;
@@ -341,7 +342,7 @@ $tablet: 1024px;
     display: flex;
     flex-basis: 28%;
     flex-direction: column;
-    align-content: center;
+    justify-content: space-between;
   }
   &__title3 {
     font-family: $open-sans;
@@ -357,11 +358,40 @@ $tablet: 1024px;
     font-weight: 400;
     font-size: 1.25em;
     line-height: 2em;
-    color: rgba(119, 119, 119, 1);
+    color: $gray;
     text-align: left;
+  } 
+  &__paragraph2_black {
+    color: $black;
   }
+  &__category {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.75em;
+    align-items: center;
+  }
+  &__title4 {
+    font-family: $open-sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: $blue;
+  }
+&__title4_gray {
+  color: $gray;
+  font-weight: 400;
+}
+&__title4_black {
+  color: $black;
+  font-weight: 400;
+}
   &__foto {
     max-width: 100%;
+  }
+  &__button {
+    margin: 5.25em auto;
+    width: 14em;
   }
   /* Explore page */
   &__explorepage {
