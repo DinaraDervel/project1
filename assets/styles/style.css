@@ -817,6 +817,18 @@ ol {
   .block4__accordion {
     flex-wrap: wrap;
   }
+  .block4__name {
+    flex-wrap: wrap;
+  }
+  .block4__text {
+    font-size: 1.5em;
+    line-height: 150%;
+    margin: 0 auto;
+  }
+  .block4__paragraph {
+    font-size: 1.5em;
+    line-height: 150%;
+  }
 }
 
 /*Class for section6 (Dinara)*/

@@ -886,6 +886,21 @@ $tablet: 1024px;
     &__accordion {
       flex-wrap: wrap;
     }
+
+    &__name {
+      flex-wrap: wrap
+    }
+
+    &__text {
+      font-size: 1.5em;
+      line-height: 150%;
+      margin: 0 auto;
+    }
+
+    &__paragraph {
+      font-size: 1.5em;
+    line-height: 150%;
+    }
   }
 }
 
