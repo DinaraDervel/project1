@@ -64,8 +64,7 @@ ol {
 .btn:hover {
   cursor: pointer;
   color: #ffffff;
-  box-shadow: 0 0 15px 15px #1c3d5b inset, 0 0 5px 5px #ffffff;
-  -webkit-transition: all 150ms ease-in-out;
+  box-shadow: 0 0 25px 25px #1c3d5b inset, 0 0 5px 5px #ffffff;
   transition: all 150ms ease-in-out;
 }
 .btn_small {
@@ -82,7 +81,6 @@ ol {
   border-color: #0a2640;
   color: #ffffff;
   box-shadow: 0 0 40px 40px #0a2640 inset, 0 0 0 0 #0a2640;
-  -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
 }
 .btn_blue:hover {
@@ -93,7 +91,6 @@ ol {
   background: #65e4a3;
   border-color: #69e6a6;
   box-shadow: 0 0 40px 40px #65e4a3 inset, 0 0 0 0 #65e4a3;
-  -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
 }
 .btn_green:hover {
@@ -221,10 +218,6 @@ ol {
   max-width: 100%;
 }
 @media (max-width: 1024px) {
-  .header {
-    width: 95%;
-    margin: 0 auto;
-  }
   .header .title {
     font-size: 2em;
     line-height: 1.4em;
@@ -349,6 +342,7 @@ ol {
   display: flex;
   flex-basis: 25%;
   flex-direction: column;
+  justify-content: space-between;
 }
 .block2__title3 {
   font-family: "Open Sans", sans-serif;
@@ -397,6 +391,10 @@ ol {
   font-weight: 400;
 }
 .block2__foto {
+  max-width: 100%;
+  width: 100%;
+}
+.block2__foto1 {
   max-width: 100%;
 }
 .block2__button {
