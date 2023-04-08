@@ -446,8 +446,6 @@ ol {
 }
 .customers .btn {
   box-sizing: border-box;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   background-color: transparent;
   cursor: pointer;
@@ -455,8 +453,6 @@ ol {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
   align-self: start;
   text-decoration: none;
   text-align: center;
@@ -470,7 +466,6 @@ ol {
   border-color: #0a2640;
   color: #ffffff;
   box-shadow: 0 0 40px 40px #0a2640 inset, 0 0 0 0 #0a2640;
-  -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
   margin-top: 5%;
 }
@@ -503,7 +498,7 @@ ol {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 .customers .customers-section-1__img {
   max-width: 100%;
