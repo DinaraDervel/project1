@@ -168,11 +168,16 @@ ol {
   align-self: center;
 }
 .header .header-section__text {
+  width: 90%;
+  margin-bottom: 2.5em;
+  margin-top: 1em;
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
   line-height: 1.75em;
   color: #ffffff;
-  margin-bottom: 2.5em;
+}
+.header__title {
+  width: 87%;
 }
 .header .button {
   display: flex;
@@ -833,8 +838,12 @@ ol {
     margin: 0 auto;
   }
   .block4__paragraph {
+    flex-basis: 100%;
     font-size: 1.5em;
     line-height: 150%;
+  }
+  .block4__faq-container {
+    flex-basis: 100%;
   }
 }
 
@@ -843,6 +852,7 @@ ol {
   width: 85%;
   max-width: 1500px;
   margin: 0 auto;
+  /*Ellipse*/
 }
 .footer__container_blue {
   position: relative;
@@ -937,7 +947,6 @@ ol {
 }
 .footer__list {
   display: flex;
-  flex-flow: row wrap;
   gap: 0.5em;
 }
 .footer__link {
