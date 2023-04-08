@@ -914,6 +914,11 @@ ol {
   flex-direction: column;
   gap: 35px;
 }
+.footer__list {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.5em;
+}
 .footer__link {
   display: flex;
   gap: 10px;

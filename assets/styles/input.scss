@@ -993,7 +993,11 @@ $tablet: 1024px;
     flex-direction: column;
     gap: 35px;
   }
-
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.5em;
+  }
   &__link {
     display: flex;
     gap: 10px;
