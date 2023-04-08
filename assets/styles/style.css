@@ -233,10 +233,6 @@ ol {
     font-weight: 600;
     font-size: 16px;
     line-height: 28px;
-    color: #0a2640;
-  }
-  .header .btn_blue {
-    color: #ffffff;
   }
   .header .header-section-img {
     grid-template-rows: 50% 50%;
@@ -348,13 +344,12 @@ ol {
   display: flex;
   flex-basis: 25%;
   flex-direction: column;
-  justify-content: space-between;
 }
 .block2__title3 {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 1.5em;
-  line-height: 2.25em;
+  line-height: 36px;
   color: #000000;
   margin-top: 1.5em;
 }
@@ -363,7 +358,7 @@ ol {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 1.25em;
-  line-height: 2em;
+  line-height: 32px;
   color: #777777;
   text-align: left;
 }
@@ -371,10 +366,14 @@ ol {
   color: #000000;
 }
 .block2__category {
+  margin-top: 1.5em;
   display: flex;
   flex-flow: row wrap;
   gap: 0.75em;
   align-items: center;
+}
+.block2__category:last-of-type {
+  justify-self: flex-end;
 }
 .block2__title4 {
   font-family: "Open Sans", sans-serif;
@@ -402,7 +401,7 @@ ol {
 .block2__explorepage {
   display: flex;
   flex-direction: row;
-  border-bottom: 0.125em solid rgb(10, 38, 64);
+  border-bottom: 0.125em solid #0a2640;
   text-align: center;
   align-self: start;
   padding-bottom: 0.625em;
@@ -412,7 +411,6 @@ ol {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 1.25em;
-  line-height: 2/25em;
   color: #0a2640;
   text-decoration: none;
 }
@@ -423,6 +421,15 @@ ol {
   left: 0.75em;
   margin-left: 1.063em;
   margin-top: 2em;
+}
+@media (max-width: 1024px) {
+  .block2 {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .block2__cards {
+    gap: 3.125em;
+  }
 }
 @media (max-width: 767px) {
   .block2__card {
@@ -821,7 +828,7 @@ ol {
     flex-wrap: wrap;
   }
   .block4__text {
-    font-size: 1.5em;
+    font-size: 1.3em;
     line-height: 150%;
     margin: 0 auto;
   }
@@ -891,7 +898,7 @@ ol {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25em;
   line-height: 32px;
 }
 .footer__card {
@@ -920,7 +927,7 @@ ol {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1.25em;
   line-height: 32px;
 }
 .footer__menu {
@@ -940,7 +947,7 @@ ol {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25em;
   line-height: 32px;
   color: #777777;
 }
