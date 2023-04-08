@@ -346,7 +346,7 @@ ol {
 }
 .block2__card {
   display: flex;
-  flex-basis: 28%;
+  flex-basis: 25%;
   flex-direction: column;
   justify-content: space-between;
 }

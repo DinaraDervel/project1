@@ -353,7 +353,7 @@ $tablet: 1024px;
   }
   &__card {
     display: flex;
-    flex-basis: 28%;
+    flex-basis: 25%;
     flex-direction: column;
     justify-content: space-between;
   }
@@ -888,7 +888,7 @@ $tablet: 1024px;
     }
 
     &__name {
-      flex-wrap: wrap
+      flex-wrap: wrap;
     }
 
     &__text {
@@ -899,7 +899,7 @@ $tablet: 1024px;
 
     &__paragraph {
       font-size: 1.5em;
-    line-height: 150%;
+      line-height: 150%;
     }
   }
 }
