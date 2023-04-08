@@ -452,9 +452,6 @@ ol {
   appearance: none;
   background-color: transparent;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   align-self: start;
   text-decoration: none;
