@@ -43,6 +43,11 @@ ol {
 .title_center {
   text-align: center;
 }
+@media (max-width: 767px) {
+  .title {
+    font-size: 2em;
+  }
+}
 
 /*Class for button*/
 .btn {
@@ -390,7 +395,7 @@ ol {
 }
 .block2__button {
   margin: 5.25em auto;
-  width: 14em;
+  max-width: 14em;
 }
 .block2__explorepage {
   display: flex;
@@ -406,7 +411,7 @@ ol {
   font-weight: 700;
   font-size: 1.25em;
   line-height: 2/25em;
-  color: rgb(10, 38, 64);
+  color: #0a2640;
   text-decoration: none;
 }
 .block2__arrow-right-icon {
@@ -760,7 +765,7 @@ ol {
   font-family: "Manrope", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 2.25em;
   line-height: 56px;
 }
 .block4__faq-container {
