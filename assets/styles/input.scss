@@ -456,8 +456,6 @@ $tablet: 1024px;
 
   .btn {
     box-sizing: border-box;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
     background-color: transparent;
     cursor: pointer;
@@ -465,8 +463,6 @@ $tablet: 1024px;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
     align-self: start;
     text-decoration: none;
     text-align: center;
@@ -481,7 +477,6 @@ $tablet: 1024px;
       border-color: $blue;
       color: $white;
       box-shadow: 0 0 40px 40px $blue inset, 0 0 0 0 $blue;
-      -webkit-transition: all 150ms ease-in-out;
       transition: all 150ms ease-in-out;
       margin-top: 5%;
     }
@@ -520,7 +515,7 @@ $tablet: 1024px;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    margin-top: 5%;
+    margin-top: 10%;
 
     &__img {
       max-width: 100%;
