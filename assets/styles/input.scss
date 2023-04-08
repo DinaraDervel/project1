@@ -126,7 +126,7 @@ $tablet: 1024px;
   margin-bottom: 3.8em;
 
   /*Ellipse*/
-  .header::before {
+  &::before {
     content: "";
     position: absolute;
     left: 55.5%;
@@ -184,6 +184,7 @@ $tablet: 1024px;
   }
   .button {
     display: flex;
+
     justify-content: flex-start;
     gap: 1.25em;
   }
@@ -248,7 +249,7 @@ $tablet: 1024px;
       }
     }
     .header-section-img {
-      grid-template-rows: 50% 40%;
+      grid-template-rows: 50% 50%;
       margin-top: 5%;
     }
     .header-section-logo {
@@ -303,6 +304,9 @@ $tablet: 1024px;
         line-height: 1.5em;
         margin-bottom: 1em;
       }
+      .button {
+        flex-flow: row wrap;
+      }
       .btn {
         padding: 18px 33px;
         font-weight: 500;
@@ -313,7 +317,7 @@ $tablet: 1024px;
         width: 80%;
         width: fit-content;
         justify-content: center;
-        gap: 1em;
+        // gap: 1em;
       }
       .header-section-logo {
         display: none;
