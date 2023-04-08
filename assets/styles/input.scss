@@ -317,8 +317,9 @@ $tablet: 1024px;
     }
   }
 }
-/*Class for section2 (Anna)*/
-/*Block2 Cards*/
+
+/*Class for section2 (Anna) and section5 (Nataly) */
+
 .block2 {
   @include container;
   &__title1 {
@@ -326,17 +327,21 @@ $tablet: 1024px;
     font-weight: 400;
     font-size: 1.25em;
     line-height: 2em;
-    color: rgba(119, 119, 119, 1);
+    color: $gray;
     text-align: center;
   }
+  /*Block2 and Block5 Cards*/
   &__cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: stretch;
+    justify-content: center;
     margin: 0 auto;
     margin-top: 4.785em;
     gap: 6.25em;
+  }
+  &__cards_b5 {
+    gap: 3.125em;
   }
   &__card {
     display: flex;
@@ -349,7 +354,7 @@ $tablet: 1024px;
     font-weight: 400;
     font-size: 1.5em;
     line-height: 2.25em;
-    color: rgba(0, 0, 0, 1);
+    color: $black;
     margin-top: 1.5em;
   }
   &__paragraph2 {
@@ -360,7 +365,7 @@ $tablet: 1024px;
     line-height: 2em;
     color: $gray;
     text-align: left;
-  } 
+  }
   &__paragraph2_black {
     color: $black;
   }
@@ -378,14 +383,14 @@ $tablet: 1024px;
     line-height: 28px;
     color: $blue;
   }
-&__title4_gray {
-  color: $gray;
-  font-weight: 400;
-}
-&__title4_black {
-  color: $black;
-  font-weight: 400;
-}
+  &__title4_gray {
+    color: $gray;
+    font-weight: 400;
+  }
+  &__title4_black {
+    color: $black;
+    font-weight: 400;
+  }
   &__foto {
     max-width: 100%;
   }
@@ -418,6 +423,12 @@ $tablet: 1024px;
     left: 0.75em;
     margin-left: 1.063em;
     margin-top: 2em;
+  }
+
+  @media (max-width: $mobile) {
+    &__card {
+      flex-basis: 100%;
+    }
   }
 }
 
@@ -852,8 +863,8 @@ $tablet: 1024px;
 
     &__paragraph {
       flex-basis: 35%;
+    }
   }
-}
 
   @media (max-width: $tablet) {
     @include tablet-container;
@@ -869,8 +880,6 @@ $tablet: 1024px;
     }
   }
 }
-
-/*Class for section5 (Nataly)*/
 
 /*Class for section6 (Dinara)*/
 .footer {

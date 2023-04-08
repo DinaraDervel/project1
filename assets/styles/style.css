@@ -309,12 +309,12 @@ ol {
   }
 }
 
-/*Class for section2 (Anna)*/
-/*Block2 Cards*/
+/*Class for section2 (Anna) and section5 (Nataly) */
 .block2 {
   width: 85%;
   max-width: 1500px;
   margin: 0 auto;
+  /*Block2 and Block5 Cards*/
   /* Explore page */
 }
 .block2__title1 {
@@ -322,17 +322,20 @@ ol {
   font-weight: 400;
   font-size: 1.25em;
   line-height: 2em;
-  color: rgb(119, 119, 119);
+  color: #777777;
   text-align: center;
 }
 .block2__cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: stretch;
+  justify-content: center;
   margin: 0 auto;
   margin-top: 4.785em;
   gap: 6.25em;
+}
+.block2__cards_b5 {
+  gap: 3.125em;
 }
 .block2__card {
   display: flex;
@@ -345,7 +348,7 @@ ol {
   font-weight: 400;
   font-size: 1.5em;
   line-height: 2.25em;
-  color: rgb(0, 0, 0);
+  color: #000000;
   margin-top: 1.5em;
 }
 .block2__paragraph2 {
@@ -413,6 +416,11 @@ ol {
   left: 0.75em;
   margin-left: 1.063em;
   margin-top: 2em;
+}
+@media (max-width: 767px) {
+  .block2__card {
+    flex-basis: 100%;
+  }
 }
 
 /*Class for section3 (Katya G.)*/
@@ -804,7 +812,6 @@ ol {
   }
 }
 
-/*Class for section5 (Nataly)*/
 /*Class for section6 (Dinara)*/
 .footer {
   width: 85%;
