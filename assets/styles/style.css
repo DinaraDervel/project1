@@ -208,8 +208,7 @@ ol {
   margin-bottom: 5.44em;
   gap: 2%;
 }
-.header .header-section-logo__pic:first-child,
-.header .header-section-logo__pic:last-child {
+.header .header-section-logo__pic:first-child, .header .header-section-logo__pic:last-child {
   opacity: 0.3;
 }
 .header .header-section-logo__pic {
@@ -951,8 +950,7 @@ ol {
   }
 }
 @media (max-width: 767px) {
-  .footer__container_blue,
-  .footer__container_flex {
+  .footer__container_blue, .footer__container_flex {
     margin-bottom: 2em;
   }
   .footer__card:first-of-type {
