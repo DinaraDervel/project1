@@ -424,7 +424,7 @@ ol {
 }
 @media (max-width: 767px) {
   .block2__card {
-    flex-basis: 100%;
+    flex-basis: 75%;
   }
 }
 

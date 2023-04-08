@@ -431,7 +431,7 @@ $tablet: 1024px;
 
   @media (max-width: $mobile) {
     &__card {
-      flex-basis: 100%;
+      flex-basis: 75%;
     }
   }
 }
