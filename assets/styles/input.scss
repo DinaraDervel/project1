@@ -975,6 +975,10 @@ $tablet: 1024px;
     font-weight: 400;
     font-size: 1.25em;
     line-height: 32px;
+
+    &:focus {
+      outline: none;
+    }
   }
 
   &__card {

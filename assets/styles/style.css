@@ -901,6 +901,9 @@ ol {
   font-size: 1.25em;
   line-height: 32px;
 }
+.footer__input:focus {
+  outline: none;
+}
 .footer__card {
   flex-basis: 20%;
   display: flex;
